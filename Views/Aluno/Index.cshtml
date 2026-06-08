@@ -1,29 +1,10 @@
-<h1>Cadastro de alunos</h1>
-<form id="formulario">
-    <div>
-        <label for="nome">Nome:</label><br />
-        <input type="text" id="nome" />
-    </div>
+@{
+    ViewData["Title"] = "Perfil do Aluno";
+}
 
-    <br />
+<h2>Página de Perfil do Aluno</h2>
+<hr />
 
-    <div>
-        <label for="email">Email:</label><br />
-        <input type="text" id="email" />
-    </div>
-
-    <br />
-
-    <div>
-        <label for="idade">Idade:</label><br />
-        <input type="number" id="idade" />
-    </div>
-
-    <br />
-
-    <button type="submit">Enviar</button>
-</form>
-
-<p id="erro"></p>
-
-<script src="~/js/validacao.js"></script>
+<p><strong>Nome:</strong> @ViewBag.Nome</p>
+<p><strong>Curso:</strong> @ViewBag.Curso</p>
+<p><strong>Semestre:</strong> @ViewBag.Semestre</p> 
